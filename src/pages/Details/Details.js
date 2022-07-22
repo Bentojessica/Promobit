@@ -28,7 +28,7 @@ export const DetailsPage = () => {
     goToHome(navigate);
   };
 
-  const movieDetails = useRequestData(
+ const movieDetails = useRequestData(
     [],
     `${BASE_URL}/movie/${params.id}?api_key=${API_KEY}&language=pt-BR`
   )[0];
@@ -69,7 +69,6 @@ export const DetailsPage = () => {
         />
       );
     });
-
   return (
     <div>
       <ContainerHeader>
@@ -83,7 +82,7 @@ export const DetailsPage = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            marginLeft: "250px",
+            marginLeft: "250px"
             
           }}
         >
@@ -127,7 +126,7 @@ export const DetailsPage = () => {
               width: "55%",
               height: "60px",
               color: "white",
-              margin: "450px 0px 0px 250px",
+              margin: "550px 0px 0px 300px",
               position: 'absolute'
             }}
           >

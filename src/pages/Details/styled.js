@@ -47,7 +47,7 @@ display:flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-margin-top: 40px;
+margin-top: 30px;
 `
 
 export const MeiaLua = styled.div`

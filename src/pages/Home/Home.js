@@ -1,19 +1,18 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router"
 import { Header } from "../../components/Header/Header"
 import {ContainerMovieCard} from "./styled"
 import { useRequestData } from "../../Hooks/UseRequestData"
 import { goToDetails } from "../../routes/coordinator"
 import {MovieCard} from "../../components/MovieCard/MovieCard"
-import {BASE_IMG, API_KEY, BASE_URL} from "../../constants/urls"
-import { HeaderLogo } from "../../components/Header/HeaderLogo"
+import {BASE_IMG, API_KEY, BASE_URL, movieApi} from "../../constants/urls"
 
 export const HomePage = () => {
 
     const [offset, setOffset] = useState(0)
     const navigate = useNavigate()
     const movie = useRequestData([], `${BASE_URL}/movie/popular?api_key=${API_KEY}`, "results")[0]
-    
+
     const onClickMovieId = (id) => {
         goToDetails(navigate, id)
     }

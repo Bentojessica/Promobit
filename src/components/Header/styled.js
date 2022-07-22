@@ -69,9 +69,21 @@ h6 {
 `
 
 export const ContainerButton = styled.div`
-display: flex;
-flex-direction: center;
-justify-content: center;
-align-items: center;
-
+position: absolute;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 10px ;
+margin: 28% 2% 2% 2%;
+width: 90%;
+height: 112px
 `
+
+// export const ContainerButton = styled.div`
+// width: 90%;
+// left: 0px;
+// margin-top: 70%;
+// display: grid;
+// grid-template-columns: repeat(3, 1fr);
+// gap: 30px 10px;
+// margin: 2% 2% 2% 6%;
+// `
