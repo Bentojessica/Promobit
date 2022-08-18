@@ -1,4 +1,5 @@
-Case 01 - Frontend - Listagem de Filmes Usando TMDB
+Listagem de Filmes Usando TMDB
+
 Empresa: Promobit
 Enunciado: 🇧🇷
 Linguagens/Frameworks: React
